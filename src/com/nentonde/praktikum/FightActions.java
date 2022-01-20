@@ -11,7 +11,7 @@ public class FightActions {
 
     }
 
-    public void heal(Hero hero){
+    public void action(Hero hero){
 
     }
 
