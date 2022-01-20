@@ -1,6 +1,6 @@
 package com.nentonde.praktikum;
 
-public class Fighter extends Person {
+public class Hero extends Person {
 
     //base variables
     String fighterClass;
@@ -16,7 +16,7 @@ public class Fighter extends Person {
     double fighterCritChance;
 
     //constructor
-    public Fighter(String personName, String personRace, String fighterClass, int fighterBaseHP, double fighterBaseCP, int fighterBaseMP, double fighterBaseCritChance) {
+    public Hero(String personName, String personRace, String fighterClass, int fighterBaseHP, double fighterBaseCP, int fighterBaseMP, double fighterBaseCritChance) {
         super(personRace, personName);
         this.fighterClass = fighterClass;
         this.fighterBaseHP = fighterBaseHP;
