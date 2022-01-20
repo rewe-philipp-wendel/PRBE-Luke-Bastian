@@ -3,116 +3,125 @@ package com.nentonde.praktikum;
 public class Hero extends Person {
 
     //base variables
-    String fighterClass;
-    int fighterBaseHP;
-    double fighterBaseCP;
-    int fighterBaseMP;
-    double fighterBaseCritChance;
-
+    String heroClass;
+    int heroLevel;
+    int heroBaseHP;
+    double heroBaseCP;
+    int heroBaseMP;
+    double heroBaseCritChance;
 
     //actual variables
-    int fighterHP;
-    double fighterCP;
-    int fighterMP;
-    double fighterCritChance;
+    int heroHP;
+    double heroCP;
+    int heroMP;
+    double heroCritChance;
 
     //constructor
-    public Hero(String personName, String personRace, String fighterClass, int fighterBaseHP, double fighterBaseCP, int fighterBaseMP, double fighterBaseCritChance) {
+    public Hero(String personName, String personRace, String heroClass, int heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance) {
         super(personRace, personName);
-        this.fighterClass = fighterClass;
-        this.fighterBaseHP = fighterBaseHP;
-        this.fighterBaseCP = fighterBaseCP;
-        this.fighterBaseMP = fighterBaseMP;
-        this.fighterBaseCritChance = fighterBaseCritChance;
+        this.heroClass = heroClass;
+        this.heroBaseHP = heroBaseHP;
+        this.heroBaseCP = heroBaseCP;
+        this.heroBaseMP = heroBaseMP;
+        this.heroBaseCritChance = heroBaseCritChance;
     }
 
     //getter and setter
-    public String getFighterClass() {
-        return fighterClass;
+    public String getHeroClass() {
+        return heroClass;
     }
 
-    public void setFighterClass(String fighterClass) {
-        this.fighterClass = fighterClass;
+    public void setHeroClass(String heroClass) {
+        this.heroClass = heroClass;
     }
 
-    public int getFighterBaseHP() {
-        return fighterBaseHP;
+    public int getHeroLevel() {
+        return heroLevel;
     }
 
-    public void setFighterBaseHP(int fighterBaseHP) {
-        this.fighterBaseHP = fighterBaseHP;
+    public void setHeroLevel(int heroLevel) {
+        this.heroLevel = heroLevel;
     }
 
-    public double getFighterBaseCP() {
-        return fighterBaseCP;
+    public int getHeroBaseHP() {
+        return heroBaseHP;
     }
 
-    public void setFighterBaseCP(double fighterBaseCP) {
-        this.fighterBaseCP = fighterBaseCP;
+    public void setHeroBaseHP(int heroBaseHP) {
+        this.heroBaseHP = heroBaseHP;
     }
 
-    public int getFighterBaseMP() {
-        return fighterBaseMP;
+    public double getHeroBaseCP() {
+        return heroBaseCP;
     }
 
-    public void setFighterBaseMP(int fighterBaseMP) {
-        this.fighterBaseMP = fighterBaseMP;
+    public void setHeroBaseCP(double heroBaseCP) {
+        this.heroBaseCP = heroBaseCP;
     }
 
-    public double getFighterBaseCritChance() {
-        return fighterBaseCritChance;
+    public int getHeroBaseMP() {
+        return heroBaseMP;
     }
 
-    public void setFighterBaseCritChance(double fighterBaseCritChance) {
-        this.fighterBaseCritChance = fighterBaseCritChance;
+    public void setHeroBaseMP(int heroBaseMP) {
+        this.heroBaseMP = heroBaseMP;
     }
 
-    public int getFighterHP() {
-        return fighterHP;
+    public double getHeroBaseCritChance() {
+        return heroBaseCritChance;
     }
 
-    public void setFighterHP(int fighterHP) {
-        this.fighterHP = fighterHP;
+    public void setHeroBaseCritChance(double heroBaseCritChance) {
+        this.heroBaseCritChance = heroBaseCritChance;
     }
 
-    public double getFighterCP() {
-        return fighterCP;
+    public int getHeroHP() {
+        return heroHP;
     }
 
-    public void setFighterCP(double fighterCP) {
-        this.fighterCP = fighterCP;
+    public void setHeroHP(int heroHP) {
+        this.heroHP = heroHP;
     }
 
-    public int getFighterMP() {
-        return fighterMP;
+    public double getHeroCP() {
+        return heroCP;
     }
 
-    public void setFighterMP(int fighterMP) {
-        this.fighterMP = fighterMP;
+    public void setHeroCP(double heroCP) {
+        this.heroCP = heroCP;
     }
 
-    public double getFighterCritChance() {
-        return fighterCritChance;
+    public int getHeroMP() {
+        return heroMP;
     }
 
-    public void setFighterCritChance(double fighterCritChance) {
-        this.fighterCritChance = fighterCritChance;
+    public void setHeroMP(int heroMP) {
+        this.heroMP = heroMP;
+    }
+
+    public double getHeroCritChance() {
+        return heroCritChance;
+    }
+
+    public void setHeroCritChance(double heroCritChance) {
+        this.heroCritChance = heroCritChance;
     }
 
     @Override
     public String toString() {
-        return "Fighter{" +
-                "personName='" + personName + '\n' +
-                "personRace='" + personRace + '\n' +
-                "fighterClass='" + fighterClass + '\n' +
-                "fighterBaseHP=" + fighterBaseHP + '\n' +
-                "fighterBaseCP=" + fighterBaseCP + '\n' +
-                "fighterBaseMP=" + fighterBaseMP + '\n' +
-                "fighterBaseCritChance=" + fighterBaseCritChance + '\n' +
-                "fighterHP=" + fighterHP + '\n' +
-                "fighterCP=" + fighterCP + '\n' +
-                "fighterMP=" + fighterMP + '\n' +
-                "fighterCritChance=" + fighterCritChance + '\n' +
+        return "Hero{" +
+                "Name: " + personName + '\n' +
+                "Race: " + personRace + '\n' +
+                "Class: " + heroClass + '\n' +
+                "Level: " + heroLevel * '\n' +
+                "Base HP: " + heroBaseHP + '\n' +
+                "Base CP: " + heroBaseCP + '\n' +
+                "Base MP: " + heroBaseMP + '\n' +
+                "Base Critchance: " + heroBaseCritChance + '\n' +
+                "HP: " + heroHP + '\n' +
+                "CP: " + heroCP + '\n' +
+                "MP: " + heroMP + '\n' +
+                "Critchance: " + heroCritChance +
                 '}';
     }
 }
