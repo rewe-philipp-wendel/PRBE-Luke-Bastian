@@ -7,5 +7,6 @@ public class NPC extends Person{
     public NPC(String personName, String personRace, String npcType) {
         super(personName, personRace);
         this.npcType = npcType;
+
     }
 }

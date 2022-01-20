@@ -9,6 +9,7 @@ public class Hero extends Person {
     int fighterBaseMP;
     double fighterBaseCritChance;
 
+
     //actual variables
     int fighterHP;
     double fighterCP;
