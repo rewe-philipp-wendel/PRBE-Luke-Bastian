@@ -9,24 +9,28 @@ public class Hero extends Person {
     double heroBaseCP;
     int heroBaseMP;
     double heroBaseCritChance;
+    double heroBaseResistance;
 
     //actual variables
     int heroHP;
     double heroCP;
     int heroMP;
     double heroCritChance;
+    double heroResistance;
 
     //constructor
-    public Hero(String personName, String personRace, String heroClass, int heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance) {
+    public Hero(String personName, String personRace, String heroClass, int heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance, double heroBaseResistance) {
         super(personRace, personName);
         this.heroClass = heroClass;
         this.heroBaseHP = heroBaseHP;
         this.heroBaseCP = heroBaseCP;
         this.heroBaseMP = heroBaseMP;
         this.heroBaseCritChance = heroBaseCritChance;
+        this.heroBaseResistance = heroBaseResistance;
     }
 
     //getter and setter
+    //base variables
     public String getHeroClass() {
         return heroClass;
     }
@@ -75,6 +79,15 @@ public class Hero extends Person {
         this.heroBaseCritChance = heroBaseCritChance;
     }
 
+    public double getHeroBaseResistance() {
+        return heroBaseResistance;
+    }
+
+    public void setHeroBaseResistance(double heroBaseResistance) {
+        this.heroBaseResistance = heroBaseResistance;
+    }
+
+    //actual variables
     public int getHeroHP() {
         return heroHP;
     }
@@ -105,6 +118,14 @@ public class Hero extends Person {
 
     public void setHeroCritChance(double heroCritChance) {
         this.heroCritChance = heroCritChance;
+    }
+
+    public double getHeroResistance() {
+        return heroResistance;
+    }
+
+    public void setHeroResistance(double heroResistance) {
+        this.heroResistance = heroResistance;
     }
 
     @Override

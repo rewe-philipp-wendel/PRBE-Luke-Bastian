@@ -2,7 +2,7 @@ package com.nentonde.praktikum;
 
 public class Main {
 
-    Hero hero1 = new Hero("Link","Human","Knight", 6, 1, 20, 0.01);
+    Hero hero1 = new Hero("Link","Human","Knight", 6, 1, 20, 0.01, 1);
     Weapon swordTraining = new Weapon("Trainings Schwert", 3, 0.00, 0, 0);
 
 
