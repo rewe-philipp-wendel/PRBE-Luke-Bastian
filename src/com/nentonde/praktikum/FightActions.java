@@ -11,4 +11,12 @@ public class FightActions {
 
     }
 
+    public void heal(Hero hero){
+
+    }
+
+    public void useItem(Item item){
+
+    }
+
 }
