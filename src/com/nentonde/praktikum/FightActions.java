@@ -3,19 +3,24 @@ package com.nentonde.praktikum;
 public class FightActions {
 
 
-    public void attack(int enemy) {
+    public static void attack(Enemy enemy) {
 
     }
 
-    public void gettingAttacked(int damage, Hero hero){
+    public static void gettingAttacked(Enemy enemy, double damage, Hero hero){
+        System.out.println(hero.getPersonName() + " wird von " + enemy.getPersonName() + " für " + damage + " damage angegriffen!");
+        hero.setHeroHP(hero.getHeroHP() - enemy.getEnemyCP());
+        System.out.println(hero.getPersonName() + "Hat noch " + hero.getHeroHP() + " HP");
+        if(hero.getHeroHP() == 0){
+            System.out.println(hero.getPersonName() + " wurde getötet!");
+        }
+    }
+
+    public static void action(Hero hero){
 
     }
 
-    public void action(Hero hero){
-
-    }
-
-    public void useItem(Item item){
+    public static void useItem(Item item){
 
     }
 
