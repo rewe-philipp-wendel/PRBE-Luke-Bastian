@@ -5,22 +5,22 @@ public class Hero extends Person {
     //base variables
     String heroClass;
     int heroLevel;
-    int heroBaseHP;
+    double heroBaseHP;
     double heroBaseCP;
     int heroBaseMP;
     double heroBaseCritChance;
     double heroBaseResistance;
 
     //actual variables
-    int heroHP;
+    double heroHP;
     double heroCP;
     int heroMP;
     double heroCritChance;
     double heroResistance;
 
     //constructor
-    public Hero(String personName, String personRace, String heroClass, int heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance, double heroBaseResistance) {
-        super(personRace, personName);
+    public Hero(String personName, String personRace, String heroClass, double heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance, double heroBaseResistance) {
+        super(personName, personRace);
         this.heroClass = heroClass;
         this.heroBaseHP = heroBaseHP;
         this.heroBaseCP = heroBaseCP;
@@ -47,11 +47,11 @@ public class Hero extends Person {
         this.heroLevel = heroLevel;
     }
 
-    public int getHeroBaseHP() {
+    public double getHeroBaseHP() {
         return heroBaseHP;
     }
 
-    public void setHeroBaseHP(int heroBaseHP) {
+    public void setHeroBaseHP(double heroBaseHP) {
         this.heroBaseHP = heroBaseHP;
     }
 
@@ -88,11 +88,11 @@ public class Hero extends Person {
     }
 
     //actual variables
-    public int getHeroHP() {
+    public double getHeroHP() {
         return heroHP;
     }
 
-    public void setHeroHP(int heroHP) {
+    public void setHeroHP(double heroHP) {
         this.heroHP = heroHP;
     }
 
