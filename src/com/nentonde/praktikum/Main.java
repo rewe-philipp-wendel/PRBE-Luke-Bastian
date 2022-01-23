@@ -11,7 +11,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        hero1.setHeroHP(hero1.getHeroBaseHP());
+        //hero1.setHeroHP(hero1.getHeroBaseHP());
         FightActions.gettingAttacked(enemy1, enemy1.getEnemyCP(), hero1);
     }
 }

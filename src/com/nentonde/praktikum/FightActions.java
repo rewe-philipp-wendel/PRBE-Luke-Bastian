@@ -9,7 +9,8 @@ public class FightActions {
 
     public static void gettingAttacked(Enemy enemy, double damage, Hero hero){
         System.out.println(hero.getPersonName() + " wird von " + enemy.getPersonName() + " für " + damage + " damage angegriffen!");
-        hero.setHeroHP(hero.getHeroHP() - enemy.getEnemyCP());
+        hero.setHeroDamageTaken(hero.getHeroDamageTaken() + enemy.enemyCP);
+        hero.setHeroHP(hero.getHeroBaseHP() - hero.getHeroDamageTaken());
         System.out.println(hero.getPersonName() + "Hat noch " + hero.getHeroHP() + " HP");
         if(hero.getHeroHP() == 0){
             System.out.println(hero.getPersonName() + " wurde getötet!");

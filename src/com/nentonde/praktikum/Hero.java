@@ -18,6 +18,10 @@ public class Hero extends Person {
     double heroCritChance;
     double heroResistance;
 
+    //Battle variables
+    public double heroDamageTaken;
+
+
     //constructor
     public Hero(String personName, String personRace, String heroClass, double heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance, double heroBaseResistance) {
         super(personName, personRace);
@@ -126,6 +130,15 @@ public class Hero extends Person {
 
     public void setHeroResistance(double heroResistance) {
         this.heroResistance = heroResistance;
+    }
+
+    //battle variables
+    public double getHeroDamageTaken() {
+        return heroDamageTaken;
+    }
+
+    public void setHeroDamageTaken(double heroDamageTaken) {
+        this.heroDamageTaken = heroDamageTaken;
     }
 
     @Override
