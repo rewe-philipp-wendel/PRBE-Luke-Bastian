@@ -3,7 +3,7 @@ package com.nentonde.praktikum;
 public class Hero extends Person {
 
     //base variables
-    String heroClass;
+    Class heroClass;
     int heroLevel;
     double heroBaseHP;
     double heroBaseCP;
@@ -23,7 +23,7 @@ public class Hero extends Person {
 
 
     //constructor
-    public Hero(String personName, String personRace, String heroClass, double heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance, double heroBaseResistance) {
+    public Hero(String personName, String personRace, Class heroClass, double heroBaseHP, double heroBaseCP, int heroBaseMP, double heroBaseCritChance, double heroBaseResistance) {
         super(personName, personRace);
         this.heroClass = heroClass;
         this.heroBaseHP = heroBaseHP;
@@ -35,11 +35,11 @@ public class Hero extends Person {
 
     //getter and setter
     //base variables
-    public String getHeroClass() {
+    public Class getHeroClass() {
         return heroClass;
     }
 
-    public void setHeroClass(String heroClass) {
+    public void setHeroClass(Class heroClass) {
         this.heroClass = heroClass;
     }
 
