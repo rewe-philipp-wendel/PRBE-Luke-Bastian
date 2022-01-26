@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Class {
 
+    /*Classes + actions
+    Support/Mage: Healing a teammate
+    Knight: Superslash (Deals double the damage to 2 enemies)
+    Archer: Arrowrain (attacks all enemies with an 0.5 multiplier of the standart attack damage)
+
+     */
     String classClassName;
     String classClassAction;
 
