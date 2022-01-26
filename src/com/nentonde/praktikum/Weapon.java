@@ -9,12 +9,10 @@ public class Weapon {
     int weaponMagicUsage;
 
     //constructor
-    public Weapon(String weaponName, double weaponCombatDamage, double weaponCritChance, double weaponMagicDamage, int weaponMagicUsage) {
+    public Weapon(String weaponName, double weaponCombatDamage, double weaponCritChance) {
         this.weaponName = weaponName;
         this.weaponCombatDamage = weaponCombatDamage;
         this.weaponCritChance = weaponCritChance;
-        this.weaponMagicDamage = weaponMagicDamage;
-        this.weaponMagicUsage = weaponMagicUsage;
     }
 
     //getter and setter
