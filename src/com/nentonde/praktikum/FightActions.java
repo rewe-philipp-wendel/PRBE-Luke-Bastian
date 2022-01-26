@@ -1,10 +1,19 @@
 package com.nentonde.praktikum;
 
+import java.util.Random;
+
 public class FightActions {
 
+    private static Random random = new Random();
 
-    public static void attack(Enemy enemy) {
-
+    public static void attack(Hero hero, Enemy enemy) {
+        int critProb = random.nextInt(100);
+        if(critProb == hero.heroBaseCritChance){
+            System.out.println(hero.getPersonName() + " hat einen kritischen Treffer gelandet");
+        }
+        else {
+            System.out.println(hero.getPersonName() + " hat einen normalen Treffer gelandet");
+        }
     }
 
     public static void gettingAttacked(Enemy enemy, double damage, Hero hero){
