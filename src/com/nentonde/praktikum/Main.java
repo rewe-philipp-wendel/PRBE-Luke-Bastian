@@ -1,6 +1,10 @@
 package com.nentonde.praktikum;
 
+import java.util.Scanner;
+
 public class Main {
+
+    Scanner mainScanner = new Scanner(System.in);
 
     //objects
     static Class class1 = new Class("Klasse 1");
@@ -9,11 +13,16 @@ public class Main {
     static Weapon swordTraining = new Weapon("Trainings Schwert", 3, 0);
 
 
+
     public static void main(String[] args) {
+
+        Class[] classes = new Class[1];
+        classes[0] = class1;
+
+        while(true){
+
+        }
         //hero1.setHeroHP(hero1.getHeroBaseHP());
         //FightActions.gettingAttacked(enemy1, enemy1.getEnemyCP(), hero1);
-        for(int i = 0; i < 100; i++){
-            FightActions.attack(hero1, enemy1);
-        }
     }
 }
