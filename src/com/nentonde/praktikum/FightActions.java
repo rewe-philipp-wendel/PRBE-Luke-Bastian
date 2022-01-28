@@ -5,22 +5,31 @@ import java.util.Scanner;
 
 public class FightActions {
 
-    public void chooseHero(){
+    static Hero fightActionsHeroChosen;
+
+    public static void chooseHero(){
 
         Scanner in = new Scanner(System.in);
 
         System.out.println("Wer soll aggieren?");
-        //Hero hero;
+        String heroName = in.next();
+
+        Hero hero = Convert.toHero(heroName);
+        if(hero != null){
+            hero = fightActionsHeroChosen;
+        }
     }
 
-    public static void attack(Hero hero, Enemy enemy) {
+    public static void attack(Enemy enemy) {
+
         Random random = new Random();
         int critProb = random.nextInt(100);
-        if(critProb == hero.heroBaseCritChance){
-            System.out.println(hero.getPersonName() + " hat einen kritischen Treffer gelandet");
+
+        if(critProb == fightActionsHeroChosen.heroBaseCritChance){
+            System.out.println(fightActionsHeroChosen.getPersonName() + " hat einen kritischen Treffer gelandet");
         }
         else {
-            System.out.println(hero.getPersonName() + " hat einen normalen Treffer gelandet");
+            System.out.println(fightActionsHeroChosen.getPersonName() + " hat einen normalen Treffer gelandet");
         }
     }
 
@@ -34,7 +43,7 @@ public class FightActions {
         }
     }
 
-    public static void action(Hero hero){
+    public static void action(){
 
     }
 
