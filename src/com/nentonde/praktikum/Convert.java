@@ -8,10 +8,10 @@ public class Convert {
     }
 
     //toHero
-    public static Hero toHero(String heroName) {
+    public static Hero nameToHero(String heroName) {
 
         for (int i = 0; i < Main.heroIndex.length; i++) {
-            if (heroName == Main.heroIndex[i].personName) {
+            if (heroName.equals(Main.heroIndex[i].personName)) {
                 return Main.heroIndex[i];
             }
         }
@@ -19,7 +19,7 @@ public class Convert {
         return null;
     }
 
-    public static Hero toHero(int heroNumber) {
+    public static Hero idToHero(int heroNumber) {
 
         if (heroNumber < Main.heroIndex.length) {
             return Main.heroIndex[heroNumber];
@@ -31,7 +31,7 @@ public class Convert {
     }
 
     //toEnemy
-    public static Enemy toenemy(String enemyName) {
+    public static Enemy nameToEnemy(String enemyName) {
 
         for (int i = 0; i < Main.heroIndex.length; i++) {
             if (enemyName == Main.heroIndex[i].personName) {
@@ -42,10 +42,10 @@ public class Convert {
         return null;
     }
 
-    public static Enemy toEnemy(int enemyNumber) {
+    public static Enemy idToEnemy(int enemyId) {
 
-        if (enemyNumber < Main.enemyIndex.length) {
-            return Main.enemyIndex[enemyNumber];
+        if (enemyId < Main.enemyIndex.length) {
+            return Main.enemyIndex[enemyId];
         } else {
             System.out.println("Dieser Gegner existiert nicht");
             return null;

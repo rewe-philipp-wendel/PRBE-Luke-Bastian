@@ -26,7 +26,7 @@ public class Main {
         */
 
         FightActions.chooseHero();
-        FightActions.attack(Convert.toEnemy(mainRandom.nextInt(enemyIndex.length - 1)));
+        FightActions.attack(Convert.idToEnemy(mainRandom.nextInt(enemyIndex.length - 1)));
 
         while (true) {
 

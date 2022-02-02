@@ -13,8 +13,9 @@ public class FightActions {
 
         System.out.println("Wer soll aggieren?");
         String heroName = in.next();
+        System.out.println(heroName);
 
-        Hero hero = Convert.toHero(heroName);
+        Hero hero = Convert.nameToHero(heroName);
         if(hero != null){
             hero = fightActionsHeroChosen;
         }
